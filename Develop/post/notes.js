@@ -12,6 +12,7 @@ router.get('/notes', (req, res) => {
 
 router.post('/notes', (req, res) => {
     req.body.id = notes.length.toString();
+    // local variable
     const note = req.body;
     notes.push(note);
     fs.writeFileSync(
@@ -21,4 +22,4 @@ router.post('/notes', (req, res) => {
     res.json(note);
 });
 
-    module.exports = router;
+module.export = router;
