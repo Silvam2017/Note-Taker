@@ -1,6 +1,6 @@
-const api = require('./post/notes');
+const api = require('./post/notes.js');
 
-const html = require('./post/html');
+const html = require('./post/html.js');
 
 const express = require('express');
 
