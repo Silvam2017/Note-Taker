@@ -1,3 +1,4 @@
+// change db.json to named entity
 const { notes } = require('../db/db.json')
 
 const fs = require('fs');

@@ -1,6 +1,6 @@
-const api = require('./post/notes.js');
+const api = require('./post/notes');
 
-const html = require('./post/html.js');
+const html = require('./post/html');
 
 const express = require('express');
 
@@ -11,6 +11,8 @@ const path = ('path');
 const PORT = process.env.PORT || 3001;
 
 const app = express();
+
+const router = require('express').Router();
 
 app.use(express.static('public'));
 
@@ -23,3 +25,5 @@ app.use('/', html);
 app.listen(PORT, () => {
     console.log(`Server is now active on port ${PORT}.`);
 });
+
+module.export =  router;
