@@ -26,4 +26,4 @@ app.listen(PORT, () => {
     console.log(`Server is now active on port ${PORT}.`);
 });
 
-module.export =  router;
+module.exports =  router;

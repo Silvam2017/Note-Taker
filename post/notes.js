@@ -23,4 +23,4 @@ router.post('/notes', (req, res) => {
     res.json(note);
 });
 
-module.export = router;
+module.exports = router;
