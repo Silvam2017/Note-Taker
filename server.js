@@ -1,12 +1,12 @@
-const api = require('./post/notes');
+const api = require('./routes/apiRoutes/notes');
 
-const html = require('./post/html');
+const html = require('./routes/htmlRoutes/html');
 
 const express = require('express');
 
 const fs = require('fs');
 
-const path = ('path');
+const path = require('path');
 
 const PORT = process.env.PORT || 3001;
 
